@@ -133,4 +133,22 @@ export class ProjectsService {
     }
     return project;
   }
+
+  getProjectsByFilter(FilterTags:Tag[]) {
+    let filteredProjects : Project [] = [];
+    this.projects.forEach(function(project){
+      let foundAll = true;
+
+      FilterTags.forEach(function(filtertag){
+        if (project.tags.includes(filtertag) == false){
+          foundAll= false;
+        }
+      });
+      if(foundAll){
+        filteredProjects.push(project);
+      }
+    });
+
+    return filteredProjects;
+  }
 }

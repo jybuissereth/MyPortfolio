@@ -19,6 +19,8 @@ export class Tag {
   static readonly REST = new Tag('REST', 'seagreen');
   static readonly XML = new Tag('XML', 'darkmagenta');
   static readonly APEX = new Tag('Apex', 'midnightblue');
+  static readonly ANGULAR = new Tag('Angular', 'darkpink');
+
 
   private constructor(
     private readonly key: string,

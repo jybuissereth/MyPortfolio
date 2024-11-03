@@ -29,12 +29,8 @@
       <div class="text-center">
         <h2>Mes projets</h2>
         <h4>{{ featuredProject.name }}</h4>
-        <p>
-          Description de vos projets ici. N'hésitez pas à ajouter des détails
-          sur vos réalisations.
-        </p>
       </div>
-      <carousel> 
+      <carousel>
         <div *ngFor="let image of featuredProject.pictures">
           <slide>
             <img
@@ -45,7 +41,10 @@
           </slide>
         </div>
       </carousel>
-      <p class="mt-2">Voir le portfolio en détails</p>
+      <p class="mt-2">
+        {{ featuredProject.description }}
+      </p>
+      <p class="mt-2">Voir le portfolio pour plus de détails</p>
     </div>
   </div>
 </div>

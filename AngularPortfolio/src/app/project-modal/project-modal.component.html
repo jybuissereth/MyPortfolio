@@ -1,24 +1,22 @@
-<div class="class modal-header">
+<div class="modal-header">
   <h2>{{ project.name }}</h2>
   <button class="btn-close" (click)="bsModalRef.hide()"></button>
 </div>
 <div class="modal-body">
   <carousel>
-    <div *ngFor="let image of project.pictures">
-      <slide>
-        <img
-          [src]="image"
-          alt="Project image"
-          style="display: block; width: 100%"
-        />
-      </slide>
-    </div>
+    <slide *ngFor="let image of project.pictures">
+      <img
+        [src]="image"
+        alt="Project image"
+        style="display: block; width: 100%"
+      />
+    </slide>
   </carousel>
   <h3 class="mt-2">Description</h3>
   <p>{{ project.complete_summary }}</p>
   <p>
     Vous pouvez trouver ce projet sur Github
-    <a href="{{ project.projectLink }}">Ici</a>
+    <a [href]="project.projectLink">Ici</a>
   </p>
   <hr />
 
