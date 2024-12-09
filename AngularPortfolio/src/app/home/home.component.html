@@ -10,17 +10,19 @@
           style="max-width: 20%; height: auto"
         />
         <p>
-          Le Lorem Ipsum est simplement du faux texte employé dans la
-          composition et la mise en page avant impression. Le Lorem Ipsum est le
-          faux texte standard de l'imprimerie depuis les années 1500, quand un
-          imprimeur anonyme assembla ensemble des morceaux de texte pour
-          réaliser un livre spécimen de polices de texte. Il n'a pas fait que
-          survivre cinq siècles, mais s'est aussi adapté à la bureautique
-          informatique, sans que son contenu n'en soit modifié. Il a été
-          popularisé dans les années 1960 grâce à la vente de feuilles Letraset
-          contenant des passages du Lorem Ipsum, et, plus récemment, par son
-          inclusion dans des applications de mise en page de texte, comme Aldus
-          PageMaker.
+          ingénieur en informatique polyvalent et passionné par la programmation
+          et les défis techniques. Mon parcours est riche et pluridisciplinaire,
+          avec une spécialisation en réseaux informatiques, en développement
+          d'interfaces graphiques et en programmation web. J'ai acquis une
+          solide expérience en gestion de projets logiciels ainsi qu’en systèmes
+          de gestion de bases de données. Mon expertise couvre aussi
+          l'administration des systèmes d'exploitation, l'algorithmique,
+          notamment les algorithmes des graphes, et de nombreuses compétences en
+          programmation dans divers langages, comme Python, Java et C.
+          J’apprécie particulièrement relever des challenges en informatique, et
+          j’ai aussi des connaissances en sécurité informatique, mise en place
+          de DNS, ainsi qu'en technologies de pointe telles que le cloud, les
+          bases de données et l'intelligence artificielle.
         </p>
       </div>
     </div>
@@ -30,7 +32,7 @@
         <h2>Mes projets</h2>
         <h4>{{ featuredProject.name }}</h4>
       </div>
-      <carousel>
+      <carousel [interval]="3000">
         <div *ngFor="let image of featuredProject.pictures">
           <slide>
             <img

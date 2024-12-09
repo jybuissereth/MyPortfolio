@@ -25,7 +25,7 @@ export class PortfolioComponent implements OnInit {
   javascript: boolean = false;
   java: boolean = false;
   typescript: boolean = false;
-  csharp: boolean = false;
+  css: boolean = false;
   cpp: boolean = false;
   ruby: boolean = false;
   php: boolean = false;
@@ -54,7 +54,7 @@ export class PortfolioComponent implements OnInit {
     if (this.javascript) filterTags.push(Tag.JAVASCRIPT);
     if (this.java) filterTags.push(Tag.JAVA);
     if (this.typescript) filterTags.push(Tag.TYPESCRIPT);
-    if (this.csharp) filterTags.push(Tag.CSHARP);
+    if (this.css) filterTags.push(Tag.CSS);
     if (this.cpp) filterTags.push(Tag.CPP);
     if (this.ruby) filterTags.push(Tag.RUBY);
     if (this.php) filterTags.push(Tag.PHP);
@@ -75,7 +75,7 @@ export class PortfolioComponent implements OnInit {
       this.javascript ||
       this.java ||
       this.typescript ||
-      this.csharp ||
+      this.css ||
       this.cpp ||
       this.ruby ||
       this.php ||
@@ -102,7 +102,7 @@ export class PortfolioComponent implements OnInit {
     this.javascript = false;
     this.java = false;
     this.typescript = false;
-    this.csharp = false;
+    this.css = false;
     this.cpp = false;
     this.ruby = false;
     this.php = false;

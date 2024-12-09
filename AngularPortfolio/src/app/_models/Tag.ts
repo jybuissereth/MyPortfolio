@@ -3,7 +3,7 @@ export class Tag {
   static readonly PYTHON = new Tag('Python', 'darkblue');
   static readonly JAVA = new Tag('Java', 'darkred');
   static readonly TYPESCRIPT = new Tag('TypeScript', 'darkcyan');
-  static readonly CSHARP = new Tag('C#', 'indigo');
+  static readonly CSS = new Tag('CSS', 'indigo');
   static readonly CPP = new Tag('C++', 'darkgreen');
   static readonly RUBY = new Tag('Ruby', 'crimson');
   static readonly PHP = new Tag('PHP', 'darkviolet');
